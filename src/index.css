@@ -6,14 +6,14 @@
   --bg-color: #0f172a;
   --card-bg: rgba(255, 255, 255, 0.1);
   --card-border: rgba(255, 255, 255, 0.15);
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --text-main: #ffffff;
+  --text-muted: #cbd5e1;
   --danger: #ef4444;
   --success: #22c55e;
   
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: dark;
   color: var(--text-main);

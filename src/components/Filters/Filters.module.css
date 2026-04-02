@@ -21,11 +21,12 @@
 .searchInput {
   width: 100%;
   padding: 0.75rem 1rem 0.75rem 3rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 14px;
-  color: #fff;
-  font-size: 0.95rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
   transition: all 0.2s ease;
 }
 
@@ -47,8 +48,8 @@
 .filterBtn {
   flex: 1;
   padding: 0.6rem;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: var(--text-muted);
   border-radius: 9px;
 }

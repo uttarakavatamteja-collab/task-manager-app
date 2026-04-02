@@ -37,8 +37,8 @@
 
 .title {
   font-size: 1rem;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 600;
+  color: #ffffff;
   transition: all 0.2s ease;
   white-space: nowrap;
   overflow: hidden;
@@ -48,17 +48,17 @@
 .completed .title {
   text-decoration: line-through;
   color: var(--text-muted);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .meta {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.05em;
 }
 
 .priority {
