@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './ProgressBar.module.css';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 const ProgressBar = ({ progress }) => {
   return (
     <div className={styles.container}>
       <div className={styles.barBackground}>
-        <motion.div 
+        <Motion.div 
           className={styles.barForeground}
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}

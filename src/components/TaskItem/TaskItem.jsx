@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './TaskItem.module.css';
 import { Trash2, CheckCircle, Circle, Edit2, Check, X, Calendar, Flag } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion as Motion, AnimatePresence } from 'framer-motion';
 
 const TaskItem = ({ task, onToggle, onDelete, onEdit }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -21,7 +21,7 @@ const TaskItem = ({ task, onToggle, onDelete, onEdit }) => {
   };
 
   return (
-    <motion.div 
+    <Motion.div 
       layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ const TaskItem = ({ task, onToggle, onDelete, onEdit }) => {
           <Trash2 size={16} />
         </button>
       </div>
-    </motion.div>
+    </Motion.div>
   );
 };
 

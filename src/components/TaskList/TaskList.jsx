@@ -2,19 +2,19 @@ import React from 'react';
 import TaskItem from '../TaskItem/TaskItem';
 import styles from './TaskList.module.css';
 import { ClipboardList } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion as Motion, AnimatePresence } from 'framer-motion';
 
 const TaskList = ({ tasks, onToggle, onDelete, onEdit }) => {
   if (tasks.length === 0) {
     return (
-      <motion.div 
+      <Motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className={styles.emptyState}
       >
         <ClipboardList size={48} className={styles.emptyIcon} />
         <p>No tasks found. Try adjusting your filters or search.</p>
-      </motion.div>
+      </Motion.div>
     );
   }
 
