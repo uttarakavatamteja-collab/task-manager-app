@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './Header.module.css';
 import { ListTodo } from 'lucide-react';
+import ProgressBar from './ProgressBar';
 
 const Header = ({ total, completed }) => {
+  const progress = total === 0 ? 0 : (completed / total) * 100;
+
   return (
     <header className={styles.header}>
       <div className={styles.titleContainer}>
@@ -19,6 +22,7 @@ const Header = ({ total, completed }) => {
           <span className={styles.statValue}>{completed}</span>
         </div>
       </div>
+      <ProgressBar progress={progress} />
     </header>
   );
 };
