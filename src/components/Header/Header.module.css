@@ -1,0 +1,65 @@
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: var(--accent-color);
+}
+
+.titleContainer h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  background: linear-gradient(to right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.statItem {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.statItem:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
